@@ -10,9 +10,9 @@ import { FooterComponent } from './commons/footer/footer.component';
 import { NotFoundComponent } from './commons/not-found/not-found.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
-import { ProductListComponent } from './components/product-list/product-list.component';
-import { ProductCardComponent } from './components/product-card/product-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProductListComponent } from './pages/products-page/product-list/product-list.component';
+import { ProductCardComponent } from './pages/products-page/product-card/product-card.component';
 
 @NgModule({
   declarations: [

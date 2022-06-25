@@ -13,6 +13,7 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductListComponent } from './pages/products-page/product-list/product-list.component';
 import { ProductCardComponent } from './pages/products-page/product-card/product-card.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,9 @@ import { ProductCardComponent } from './pages/products-page/product-card/product
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

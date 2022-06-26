@@ -18,4 +18,8 @@ export class AlbumHttpService {
   delete(id: number) {
     return this.http.delete(`${apiUrl}/${id}`)
   }
+
+  save(album: any) {
+    return this.http.post<any>(apiUrl, album)
+  }
 }

@@ -16,6 +16,7 @@ import { ProductCardComponent } from './pages/products-page/product-card/product
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormulaireComponent } from './components/formulaire/formulaire.component';
+import { FormulaireAlbumComponent } from './components/formulaire-album/formulaire-album.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FormulaireComponent } from './components/formulaire/formulaire.componen
     ProductListComponent,
     ProductCardComponent,
     FormulaireComponent,
+    FormulaireAlbumComponent,
   ],
   imports: [
     BrowserModule,

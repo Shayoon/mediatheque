@@ -34,4 +34,8 @@ export class ProductsPageComponent implements OnInit {
   onSaveFilm(film: any) {
     this.serviceFilm.save(film).subscribe((newFilm: any) => this.films.push(newFilm))
   }
+
+  onSaveAlbum(album: any) {
+    this.serviceAlbum.save(album).subscribe((newAlbum: any) => this.albums.push(newAlbum))
+  }
 }

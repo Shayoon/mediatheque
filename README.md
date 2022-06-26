@@ -38,5 +38,5 @@ json-server --watch db/db.json --port 3050
 #remplacer 3050 par n'importe quel port au besoin
 ```
 
-**Si le port par defaut est changé, il faut aller changer la variable d'environement API_URL dans environments/environement.ts**
+**Si le port par defaut est changé, il faut aller changer la variable d'environement API_URL dans environments/environment.ts**
 

@@ -1,0 +1,36 @@
+<div class="formulaire">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="champ">
+            <label for="nom">
+                Nom :
+                <input type="text" formControlName="nom">
+            </label>
+        </div>
+        <div class="champ">
+            <label for="artiste">
+                Artiste :
+                <input type="text" formControlName="artiste">
+            </label>
+        </div>
+
+        <div class="champ">
+            <label for="annee">
+                Année :
+                <input type="number" formControlName="annee">
+            </label>
+        </div>
+        <div class="champ">
+            <label for="img">
+                URL de l'affiche :
+                <input type="text" formControlName="img">
+            </label>
+        </div>
+        <div class="champ">
+            <label for="details">
+                Details :
+                <input type="text" formControlName="details">
+            </label>
+        </div>
+        <button type="submit">Ajouter</button>
+    </form>
+</div>

@@ -13,6 +13,10 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductListComponent } from './pages/products-page/product-list/product-list.component';
 import { ProductCardComponent } from './pages/products-page/product-card/product-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormulaireComponent } from './components/formulaire/formulaire.component';
+import { FormulaireAlbumComponent } from './components/formulaire-album/formulaire-album.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +28,18 @@ import { ProductCardComponent } from './pages/products-page/product-card/product
     ProductsPageComponent,
     ProductListComponent,
     ProductCardComponent,
+    FormulaireComponent,
+    FormulaireAlbumComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

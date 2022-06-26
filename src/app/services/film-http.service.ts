@@ -19,4 +19,8 @@ export class FilmHttpService {
     return this.http.delete(`${apiUrl}/${id}`)
   }
 
+  save(film: any) {
+    return this.http.post<any>(apiUrl, film)
+  }
+
 }

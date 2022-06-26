@@ -2,6 +2,7 @@
     <h3>Listes des Films</h3>
 </div>
 <app-product-list [products]="films" (delete)="onDeleteFilm($event)"></app-product-list>
+<app-formulaire (finish)="onSaveFilm($event)"></app-formulaire>
 <div class="titre">
     <h3>Listes des Albums</h3>
 </div>

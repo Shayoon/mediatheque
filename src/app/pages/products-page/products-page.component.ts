@@ -30,4 +30,8 @@ export class ProductsPageComponent implements OnInit {
       this.albums = this.albums.filter(album => album.id !== id)
     })
   }
+
+  onSaveFilm(film: any) {
+    this.serviceFilm.save(film).subscribe((newFilm: any) => this.films.push(newFilm))
+  }
 }

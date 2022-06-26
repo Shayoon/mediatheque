@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-product-card',
@@ -6,8 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./product-card.component.scss']
 })
 export class ProductCardComponent implements OnInit {
-  @Input()
-  produit: any;
+  @Input() produit: any;
+  @Output() delete = new EventEmitter();
   
   DEFAULT_IMG : string = "https://parfums-ugo.fr/wp-content/uploads/2021/07/Licorne.jpeg"
 
@@ -16,4 +16,9 @@ export class ProductCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onDelete(){
+    this.delete.emit(this.produit.id)
+    alert("Le produit sélectionné a bien été supprimé")
+  }
+  
 }

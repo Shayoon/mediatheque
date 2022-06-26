@@ -1,7 +1,7 @@
 <div class="titre">
     <h3>Listes des Films</h3>
 </div>
-<app-product-list [products]="films" ></app-product-list>
+<app-product-list [products]="films" (delete)="onDeleteFilm($event)"></app-product-list>
 <div class="titre">
     <h3>Listes des Albums</h3>
 </div>

@@ -15,4 +15,8 @@ export class FilmHttpService {
     return this.http.get<any[]>(apiUrl)
   }
 
+  delete(id:number){
+    return this.http.delete(`${apiUrl}/${id}`)
+  }
+
 }

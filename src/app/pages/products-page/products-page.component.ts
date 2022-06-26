@@ -19,4 +19,9 @@ export class ProductsPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onDeleteFilm(id:number){
+    this.serviceFilm.delete(id).subscribe(()=>{
+      this.films = this.films.filter(film=>film.id !== id)})
+    }
+
 }

@@ -13,7 +13,9 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductListComponent } from './pages/products-page/product-list/product-list.component';
 import { ProductCardComponent } from './pages/products-page/product-card/product-card.component';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormulaireComponent } from './components/formulaire/formulaire.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import {HttpClientModule} from '@angular/common/http';
     ProductsPageComponent,
     ProductListComponent,
     ProductCardComponent,
+    FormulaireComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
     
   ],
   providers: [],

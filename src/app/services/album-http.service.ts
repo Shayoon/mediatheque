@@ -11,8 +11,11 @@ export class AlbumHttpService {
 
   constructor(private http: HttpClient) { }
 
-  public findAll(){
+  public findAll() {
     return this.http.get<any[]>(apiUrl)
   }
 
+  delete(id: number) {
+    return this.http.delete(`${apiUrl}/${id}`)
+  }
 }
